@@ -1,0 +1,404 @@
+:root {
+  --primary-color: #0f9d58;
+  --background-color: #f0f3f7;
+  --secon-color: #9da2ad;
+  --grey: #7a7a7b;
+  --white: #ffffff;
+}
+a {
+  text-decoration: none;
+}
+ul li {
+  list-style-type: none;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  position: relative;
+  font-family: "Poppins", "sans-serif";
+}
+section{
+  padding: 4rem 0;
+}
+.header_container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  height: 5.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: var(--background-color);
+}
+.nav_logo {
+  flex-basis: 30%;
+}
+.nav_logo a {
+  color: var(--primary-color);
+  font-size: 2rem;
+  font-weight: 700;
+  padding-left: 17px;
+}
+.nav_menu ul li a.active,
+.nav_menu ul li a:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border-radius: 1rem;
+}
+.nav_menu {
+  flex-basis: 40%;
+}
+.nav_menu ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+}
+.nav_menu ul li {
+  margin-left: 1rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+.nav_menu ul li a {
+  color: var(--grey);
+  font-weight: 600;
+  padding: 0.8rem 1.5rem;
+  margin-left: 0.7rem;
+}
+.nav_btn {
+  flex-basis: 30%;
+  text-align: end;
+}
+.nav_btn .fa-solid {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  margin-right: 35px;
+  cursor: pointer;
+}
+/* ============ START MOBILE NAV =============== */
+.mb-nav {
+  display: none;
+}
+/* END MOBILE NAV */
+
+/*============ START Home ===============  */
+.home {
+  padding: 9rem 0;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-image: url("../img/brooke-lark-08bOYnH_r_E-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.bg-img-fixed {
+  background-attachment: fixed;
+}
+.home .slogan {
+  text-align: left;
+  padding-left: 30px;
+}
+.home h1 {
+  margin-top: -30px;
+  font-size: 7rem;
+  color: var(--primary-color);
+  transition: all 0.5s;
+}
+.home p {
+  width: 80%;
+  margin-top: -90px;
+  font-size: 16px;
+}
+.home .btn {
+  width: 200px;
+  padding: 1rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 1.4rem;
+  margin: 60px 0;
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.home .btn:hover {
+  background: var(--primary-color);
+  color: var(--white);
+}
+/*============ End Home ===============  */
+/*============ Start About ===============  */
+.About {
+  width: 100%;
+  background: var(--background-color);
+}
+.about_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about_container .about_card_1 {
+  flex-basis: 60%;
+}
+.about_card_1 img {
+  width: 94%;
+  border-radius: 2rem;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+  transform: translateX(22px);
+}
+.about_container .about_card_2 {
+  flex-basis: 40%;
+  height: 420px;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  transform: translate(-35%) !important;
+  background: var(--white);
+  text-align: center;
+  padding: 3rem;
+}
+.about_card_2 h3 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: var(--primary-color);
+}
+.about_card_2 h3 span {
+  color: var(--grey);
+}
+.about_card_2 p {
+  font-size: 17px;
+}
+/*============ End About ===============  */
+/*============ Start Manu ===============  */
+.Images {
+  background-image: url("../img/katherine-chase-4MMK78S7eyk-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.manu .manu_container {
+  background: var(--white);
+  border-radius: 1rem;
+  padding: 2.8rem 0;
+}
+.manu .menu_card_1 {
+  text-align: center;
+}
+.menu_card_1 h3 {
+  font-size: 25px;
+  color: var(--grey);
+}
+.menu_card_1 span {
+  color: var(--primary-color);
+}
+.menu_card_1 p {
+  width: 90%;
+}
+.manu_card_2 {
+  display: flex;
+}
+.manu_card_2 button {
+  padding: .5rem 2rem;
+  margin: 1rem;
+  outline: none;
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+  font-weight: 600;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+.manu_card_2 div button.active,
+.manu_card_2 div button:hover {
+  background: var(--primary-color);
+  color: var(--white);
+}
+.manu_card_3 {
+  width: 90%;
+  margin: 4rem auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.manu_card_3 .manu_item {
+  flex-basis: 23%;
+  height: 25.5rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  margin: 1rem auto;
+}
+.remove {
+  display: none;
+}
+.item-wrap {
+  height: 100%;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
+  border-radius: 2rem;
+}
+.item-wrap .c {
+  height: 230px;
+}
+.img-holder img {
+  width: 100%;
+  border-radius: 2rem;
+  margin: 0;
+}
+.manu_item:hover {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.item-info {
+  display: flex;
+  justify-content: space-between;
+  color: var(--primary-color);
+  font-size: 22px;
+}
+.manu_item img:hover {
+  filter: blur(2px);
+}
+.manu_card_3 h3,
+.manu_card_3 span {
+  color: var(--grey);
+  font-size: 16px;
+}
+.manu_card_3 .fa-solid {
+  margin-top: 20px;
+}
+/*============ End Manu ===============  */
+/*============ Start testimonials ===============  */
+.testimonials {
+  background: var(--background-color);
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+}
+.testimonials .container p {
+  width: 70%;
+  margin: 2rem auto;
+  font-size: 15px;
+  text-align: center;
+}
+.testimonials_card_1 {
+  flex-basis: 33%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background: var(--white);
+  padding: 1rem;
+  border-radius: 2.5rem;
+}
+
+.testimonials_card_2 {
+  flex-basis: 34%;
+  /* border: 1px solid #a1f3a1; */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transform: scale(1.2) !important;
+  padding: 1rem;
+  background: var(--white);
+  border-radius: 2.5rem;
+}
+.testimonials_card_3 {
+  padding: 1rem;
+  flex-basis: 33%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background: var(--white);
+  border-radius: 2.5rem;
+}
+
+.star {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.star img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 2rem;
+  box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.3);
+}
+.star .fa-solid {
+  color: var(--primary-color);
+  font-size: 13px;
+}
+/*============ End TESTIMONIAL ===============  */
+/*============ Start footer ===============  */
+.footer {
+  background-image: url("../img/nordwood-themes-pYWrdKO5ksI-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.footer .container {
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer .container h2 {
+  color: var(--primary-color);
+}
+.footer .container p {
+  width: 100%;
+  color: var(--white);
+}
+.foot_part_1 {
+  width: 50%;
+}
+.line {
+  line-height: 0.5;
+}
+.foot_part_2 {
+  width: 16%;
+}
+.color_nav li a {
+  color: var(--white);
+}
+.foot_part_3 {
+  width: 33.33%;
+}
+.input-group {
+  padding: 1rem;
+  border: 0.125rem solid var(--primary-color);
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.input-group input {
+  flex: auto;
+  outline: none;
+  border: none;
+  color: var(--primary-color);
+  background-color: transparent;
+}
+.foot_part_3 .input-group button {
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+  background-color: var(--primary-color);
+  border-radius: 1rem;
+  color: var(--white);
+  font-weight: 600;
+  cursor: pointer;
+}
+/*============ End footer ===============  */

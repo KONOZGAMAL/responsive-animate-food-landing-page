@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <!-- Five icone -->
+    <link rel="icon" href="./img/icon_2.jpeg" />
+    <!-- App Css -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/style_resposive.css" />
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  -->
+</head>
+
+<body>
+    <!-- START header -->
+    <header>
+        <div class="header_container">
+            <div class="nav_logo">
+                <a>Freshfood</a>
+            </div>
+            <div class="nav_menu">
+                <ul>
+                    <li><a href="#home" class="elements active">Home</a></li>
+                    <li><a href="#About" class=" elements">About</a></li>
+                    <li><a href="#manu" class="elements">Manu</a></li>
+                    <li><a href="#testimonials" class="elements">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="nav_btn">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+
+        </div>
+    </header>
+    <!-- END header -->
+
+    <!-- START MOBILE NAV -->
+    <div class="mb-nav">
+        <div class="mb-move-item"></div>
+        <div class="mb-nav-item active">
+            <a href="#home">
+                <i class="fa-solid fa-house"></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="#About">
+                <i class="fa-solid fa-face-smile-wink"></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="#manu">
+                <i class="fa-solid fa-address-book"></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="#testimonials">
+                <i class="fa-regular fa-comment-dots"></i>
+            </a>
+        </div>
+    </div>
+    <!-- END MOBILE NAV -->
+
+    <main>
+        <!-- START Home -->
+        <section class="home bg-img-fixed" id="home">
+            <div>
+                <div class="slogan">
+                    <h1 class="slogan_1">
+                        Freshfood
+                    </h1>
+                    <p class="pr">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae eveniet ullam <br />
+                        perferendis eos, nobis corrupti similique fuga ipsa minus at eius ipsam <br />
+                        expedita quam aliquam perspiciatis voluptate qui dolore soluta.
+                    </p>
+                    <button class="btn">Order now</button>
+                </div>
+            </div>
+        </section>
+        <!-- END Home -->
+        <!-- START About -->
+        <section class="About" id="About">
+            <div class="about_container">
+                <div class="about_card_1">
+                    <img src="./img/dan.jpg" />
+                </div>
+                <div class="about_card_2">
+                    <h3>We <span>create</span> delicious <span>memories for</span> you</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae eveniet ullam
+                        perferendis eos, nobis corrupti similique fuga ipsa minus at eius ipsam
+                        expedita quam aliquam perspiciatis voluptate qui dolore soluta.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- END About -->
+        <!-- START Manu -->
+        <section class="manu" id="manu">
+            <div class="Images">
+                <div class="manu_container">
+                    <div class="menu_card_1">
+                        <h3>What will <span> you</span> eat today?</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque alias aliquam eveniet,
+                            iure praesentium dicta ex dolorum inventore itaque minus repudiandae,
+                            odio provident? Velit architecto natus expedita non? Odio, dolorum.</p>
+                    </div>
+                    <div class="manu_card_2">
+                        <div class="zoom">
+                            <button type="button" class="active one" data-food="all">All Food</button>
+                        </div>
+                        <div class="zoom">
+                            <button type="button" data-food="Salad" class="two">Salad</button>
+                        </div>
+                        <div class="zoom">
+                            <button type="button" data-food="Lorem" class="three">Lorem</button>
+                        </div>
+                        <div class="zoom">
+                            <button type="button" data-food="Ipsum" class="four">Ipsum</button>
+                        </div>
+                    </div>
+                    <div class="manu_card_3">
+                        <div class="manu_item Salad">
+                            <div class="item-wrap">
+                                <div class="img-holder">
+                                    <img src="./img/1.jpg" />
+                                    <div class="item-info">
+                                        <div>
+
+                                            <h3>Lorem ipsum</h3>
+                                            <span>98$</span>
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="manu_item Lorem">
+                            <div class="item-wrap">
+                                <div class="img-holder">
+                                    <img src="./img/2.jpg" />
+                                    <div class="item-info">
+                                        <div>
+                                            <h3>
+                                                Lorem ipsum
+                                            </h3>
+                                            <span>
+                                                120$
+                                            </span>
+                                        </div>
+                                        <div class="cart-btn">
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="manu_item Ipsum">
+                            <div class="item-wrap">
+                                <div class="img-holder">
+                                    <img src="./img/6.jpg" class="c" />
+                                    <div class="item-info">
+                                        <div>
+
+                                            <h3>Lorem ipsum</h3>
+                                            <span>98$</span>
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="manu_item Salad">
+                            <div class="item-wrap">
+                                <div class="img-holder">
+                                    <img src="./img/1.jpg" />
+                                    <div class="item-info">
+                                        <div>
+
+                                            <h3>Lorem ipsum</h3>
+                                            <span>98$</span>
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="manu_item Lorem">
+                            <div class="item-wrap">
+                                <div class="img-holder">
+                                    <img src="./img/2.jpg" />
+                                    <div class="item-info">
+                                        <div>
+
+                                            <h3>Lorem ipsum</h3>
+                                            <span>98$</span>
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="manu_item Ipsum">
+                            <div class="item-wrap">
+                                <div class="img-holder">
+                                    <img src="./img/6.jpg" class="c" />
+                                    <div class="item-info">
+                                        <div>
+
+                                            <h3>Lorem ipsum</h3>
+                                            <span>98$</span>
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="manu_item Salad">
+                            <div class="item-wrap">
+                                <div class="img-holder">
+                                    <img src="./img/1.jpg" />
+                                    <div class="item-info">
+                                        <div>
+
+                                            <h3>Lorem ipsum</h3>
+                                            <span>98$</span>
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="manu_item Lorem">
+                            <div class="item-wrap">
+                                <div class="img-holder">
+                                    <img src="./img/2.jpg" />
+                                    <div class="item-info">
+                                        <div>
+
+                                            <h3>Lorem ipsum</h3>
+                                            <span>98$</span>
+                                        </div>
+                                        <div>
+                                            <i class="fa-solid fa-cart-shopping"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END Manu -->
+        <!-- START testimonials -->
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <div class="testimonials_card_1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, facilis! Exercitationem
+                        aliquid cum facilis labore doloribus fuga facere sit doloremque beatae ipsa commodi culpa
+                        provident excepturi necessitatibus corporis, alias ratione?</p>
+                    <div class="star ">
+                        <img class="imgs" src="./img/portrait-happy-young-man_171337-21716.jpg" />
+                        <h3>Lorem Ipsum Dolor</h3>
+                        <div>
+                            <a><i class="fa-solid fa-star"></i></a>
+                            <a><i class="fa-solid fa-star"></i></a>
+                            <a><i class="fa-solid fa-star"></i></a>
+                            <a><i class="fa-solid fa-star"></i></a>
+                            <a><i class="fa-solid fa-star"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials_card_2 ">
+                    <div class="over">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, eveniet doloribus
+                            architecto nobis dicta hic magnam, in facere ratione fuga adipisci animi? Distinctio officia
+                            laboriosam deserunt amet ullam molestiae saepe.</p>
+                        <div class="star ">
+                            <img class="imgs" src="./img/portrait-happy-young-man_171337-21716.jpg" />
+                            <h3>Lorem Ipsum Dolor</h3>
+                            <div>
+                                <a><i class="fa-solid fa-star"></i></a>
+                                <a><i class="fa-solid fa-star"></i></a>
+                                <a><i class="fa-solid fa-star"></i></a>
+                                <a><i class="fa-solid fa-star"></i></a>
+                                <a><i class="fa-solid fa-star"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials_card_3">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde hic illo molestiae eveniet quidem
+                        facere doloremque omnis! Ipsum velit fugiat voluptatem aperiam suscipit necessitatibus sapiente
+                        mollitia odio, adipisci aliquam blanditiis.</p>
+                    <div class="star ">
+                        <img class="imgs" src="./img/portrait-happy-young-man_171337-21716.jpg" />
+                        <h3>Lorem Ipsum Dolor</h3>
+                        <div>
+                            <a><i class="fa-solid fa-star"></i></a>
+                            <a><i class="fa-solid fa-star"></i></a>
+                            <a><i class="fa-solid fa-star"></i></a>
+                            <a><i class="fa-solid fa-star"></i></a>
+                            <a><i class="fa-solid fa-star"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- END TESTIMONIAL -->
+    </main>
+    <!-- Start Footer -->
+    <footer>
+        <section class="footer">
+            <div class="container">
+                <div class="foot_part_1">
+                    <h2>Freshfood</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Sunt sint laudantium adipisci molestias corporis distinctio
+                        libero quisquam odit quod dolorum mollitia dolorem aspernatur,
+                        id repudiandae hic doloremque accusamus pariatur. Facilis.</p>
+                    <p class="line">Email: example@mail.com</p>
+                    <p>Phone: +00 123 456 789</p>
+                    <p>Website: freshfood.com</p>
+                </div>
+                <div class="foot_part_2 text">
+                    <h2>About us</h2>
+                    <div>
+                        <ul class="color_nav">
+                            <li><a href="#home" class="elements active">Home</a></li>
+                            <li><a href="#About" class=" elements">About</a></li>
+                            <li><a href="#manu" class="elements">Manu</a></li>
+                            <li><a href="#testimonials" class="elements">Testimonials</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="foot_part_3">
+                    <h2>Subscribe & media</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Neque, reiciendis ea repudiandae, deserunt veniam,
+                        voluptate enim deleniti vitae unde consequatur fuga a. Harum explicabo,
+                        nulla cumque iusto asperiores voluptates temporibus.</p>
+                    <div class="input-group">
+                        <input type="text" placeholder="Enter your email">
+                        <button>
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- App js -->
+    <script src="./JS/script.js"></script>
+
+</body>
+
+</html>
